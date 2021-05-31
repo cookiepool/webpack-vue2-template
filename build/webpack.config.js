@@ -4,7 +4,7 @@ const path = require("path");
 // 引入htmlWebpackPlugin自动导入js文件
 const htmlWebpackPlugin = require('html-webpack-plugin');
 // 引入vue-loader插件
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const { VueLoaderPlugin } = require('vue-loader');
 // 拷贝静态资源
 const copyWebpackPlugin = require('copy-webpack-plugin');
 
