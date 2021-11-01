@@ -20,7 +20,7 @@ module.exports = {
     // 打包后生成的js文件，带hash值来保证文件的唯一性
     filename: "js/[name].[hash:4].js",
     // 生成的chunk文件名
-    chunkFilename: "js/[name].[hash:4].js",
+    chunkFilename: "js/[name].[chunkhash:4].js",
     // 资源的引用路径（这个跟你打包上线的配置有关系）
     publicPath: "/"
   },

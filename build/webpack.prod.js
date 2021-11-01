@@ -28,13 +28,12 @@ module.exports = merge(webpackCommonConfig, {
           priority: -10,
           chunks: 'all'
         },
-        // 自己定义的公告组件超过两次引用的放在chunk-common.xxxx.js下
-        common: {
+        // 自己定义的公共组件超过两次引用的放在chunk-common.xxxx.js下
+        default: {
           name: 'chunk-common',
           minChunks: 2,
           priority: -20,
-          chunks: 'all',
-          reuseExistingChunk: true
+          minSize: 20
         }
       }
     }
